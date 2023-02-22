@@ -1,12 +1,12 @@
  /*General for HTML and PDF*/
 body {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
   line-height: 1.6;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: #0f0f0f;
-  padding: 30px; }
+  padding: 6%; }
 
 body > *:first-child {
   margin-top: 0 !important; }
@@ -15,7 +15,7 @@ body > *:last-child {
 
 a {
   color: #86b9fc;
-  font-size: 15px;
+  font-size: 1.2vw;
   font-weight:bolder;
   font-family:Tahoma;
 }
@@ -23,8 +23,8 @@ a.absent {
   color: #58ddf5ce; }
 a.anchor {
   display: block;
-  padding-left: 30px;
-  margin-left: -30px;
+  padding-left: 6%;
+  margin-left: -6%;
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -32,7 +32,7 @@ a.anchor {
   bottom: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 20px 0 10px;
+  margin: 4% 0 2%;
   padding: 0;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;
@@ -62,16 +62,18 @@ h6 tt, h6 code {
   font-size: inherit; }
 
 h1 {
-  font-size: 28px;
+  font-size: 2.4vw;
   color: rgba(233, 233, 233, 0.945); }
 
 h2 {
-  font-size: 24px;
+  font-size: 1.8vw;
   border-bottom: 1px solid #cccccc;
   color: rgba(233, 233, 233, 0.945); }
 
 h3 {
-  font-size: 18px; }
+  font-size: 1.4vw; 
+  color: rgba(233, 233, 233, 0.945);
+}
 
 h4 {
   font-size: 16px; }
@@ -287,11 +289,11 @@ span.float-right {
 
 .nav > li.active {
     line-height: 1.2;
-    padding: 10px 22px;
+    padding: 2% 4%;
 }
 .nav > li > a {
     display: block;
-    padding: 3px 18px;
+    padding: 0.8% 3.6%;
     font-size: 1em;
     font-weight: 500;
 }
@@ -323,12 +325,12 @@ span.float-right {
 
 /*For HTML*/
 .html-doc {
-    padding-top: 60px !important;
+    padding-top: 10% !important;
 }
 
 .html-doc .footer {
     font-size: 85%;
-    margin-top: 20px;
+    margin-top: 4%;
     width: 250px;
 }
 
@@ -348,13 +350,13 @@ span.float-right {
 }
 
 .html-doc .nav-container {
-    margin-top: 10px;
+    margin-top: 2%;
     position: relative;
 }
 
 .html-doc .logo-img {
-    padding: 10px;
-    margin:7px 0 0 0;
+    padding: 2%;
+    margin:1.7% 0 0 0;
     max-width:75%;
     max-height:25%;
 }
@@ -363,7 +365,7 @@ span.float-right {
     display: block;
     color:whitesmoke;
     text-transform: uppercase;
-    padding: 4px 18px;
+    padding: 0.5% 3.6%;
     font-weight: 800;
     font-size:90%
     font-family: Arial;
@@ -389,7 +391,7 @@ span.float-right {
 .navbar-default .navbar-nav>li>a.generated-by:visited {
     font-size: 85%;
     color:#ADADAD;
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 0.2% 0.2% 0 #fff;
 }
 
 .navbar-default .navbar-nav>li>a.generated-by:hover {
@@ -423,50 +425,3 @@ span.float-right {
     }
 }
 
-/*For PDF*/
-.pdf-doc{
-    padding: 0px;
-}
-
-.pdf-doc .navbar-toggle {
-    display: none;
-}
-
-.pdf-doc .coverimg {
-    max-width:50%;
-}
-
-.pdf-doc .covertitle {
-   padding-top: 40%;
-   text-align: right;
-   font-size: 40px;
-}
-
-.pdf-doc .nav-container {
-  page-break-before: always !important;
-  display: block;
-}
-
-.pdf-doc pre.hljs, .pdf-doc code {
-    font-size: 80%;
-}
-
-.pdf-doc .nav > li > a {
-    padding: 3px 6px;
-}
-
-.pdf-doc .nav > li > .pdf-doc .nav > li > a {
-    padding:2px 16px;
-}
-
-.pdf-doc .nav > li > .pdf-doc .nav > li > .pdf-doc .nav > li  > a {
-    padding:2px 24px;
-}
-
-.pdf-doc .nav > li > .pdf-doc .nav > li > .pdf-doc .nav > li > .pdf-doc .nav > li  > a {
-    padding:2px 32px;
-}
-
-.pdf-doc .nav li span {
-    padding: 3px 6px;
-}
