@@ -1,7 +1,7 @@
  /*General for HTML and PDF*/
 body {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 1.5em;
   line-height: 1.8;
   padding: 2%;
   background-color: #0f0f0f;
@@ -14,7 +14,7 @@ body > *:last-child {
 
 a {
   color: #86b9fc;
-  font-size: 1.2vw;
+  font-size: 1em;
   font-weight:bolder;
   font-family:Tahoma;
 }
@@ -61,16 +61,16 @@ h6 tt, h6 code {
   font-size: inherit; }
 
 h1 {
-  font-size: 2.4vw;
+  font-size: 2em;
   color: rgba(233, 233, 233, 0.945); }
 
 h2 {
-  font-size: 1.8vw;
+  font-size: 1.5em;
   border-bottom: 1px solid #cccccc;
   color: rgba(233, 233, 233, 0.945); }
 
 h3 {
-  font-size: 1.4vw; 
+  font-size: 1.2em; 
   color: rgba(233, 233, 233, 0.945);
 }
 
@@ -293,7 +293,7 @@ span.float-right {
 .nav > li > a {
     display: block;
     padding: 0.8% 3.6%;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 500;
 }
 
