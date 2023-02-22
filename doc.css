@@ -1,12 +1,11 @@
  /*General for HTML and PDF*/
 body {
   font-family: Helvetica, arial, sans-serif;
-  font-size: 1vw;
-  line-height: 1.6;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 2%;
   background-color: #0f0f0f;
-  padding: 6%; }
+}
 
 body > *:first-child {
   margin-top: 0 !important; }
@@ -401,27 +400,29 @@ span.float-right {
 @media (max-width: 992px) {
     .html-doc .nav-container > .nav-inner {
         position: relative;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 768px) {
     .navbar > .container .doc-title {
-        margin-left: 0;
+        margin-left: 10px;
     }
     .navbar-right {
-        margin-right: 0;
+        margin-right: 10px;
     }
 }
 
 @media (min-width: 992px) {
     .nav-inner {
-        min-width: 210px;
+        min-width: 150px;
     }
 }
 
 @media (min-width: 1200px) {
     .nav-inner {
-        min-width: 250px;
+        min-width: 200px;
     }
 }
 
