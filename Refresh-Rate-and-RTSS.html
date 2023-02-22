@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>6. Unlocking Refresh Rates & RTSS Setup</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+    <style>.nav > ol > li{display: none;line-height: 0.8;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">6. Unlocking Refresh Rates & RTSS Setup</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ">Disclaimer & FAQ</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#Getting-Started">1. Getting Started</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
+                </ol>
+                <li class="active">
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html#unlocking-refresh-rates">Unlock Refresh Rates</a></ol>
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html#rtss-setup">RTSS Install & Setup</a></ol>
+              </li>    
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="unlocking-refresh-rates"></p><h2>Unlocking Refresh Rates with CRU</h2>
+          <ol>
+          <li><p>Download <strong>Custom Resolution Utility</strong>, extract somewhere you will permanently keep (Ex: C:\<Username>\Documents\Tools\CRU):</p>
+          </li>
+          <li><p><a href="https://www.monitortests.com/download/cru/cru-1.5.2.zip">Custom Resolution Utility 1.5.2 by ToastyX</a></p>
+          </li>
+          <li><p>Download the BIN file here and put into same folder</p>
+          </li>
+          <li><p><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/apps/CRU/Ciphrays-steamdeck-30-35-40-45-50-60_ex_res.bin?raw=true">Ciphray&#39;s Custom BIN for CRU</a> </p>
+          </li>
+          <li><p>Open <strong>Custom Resolution Utility</strong> and click the <strong>Import</strong> button, browse to the BIN file you just downloaded (also if you have an external monitor connected, make sure the correct display is selected at the top, should match the image below):</p>
+          </li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/CRU_1.png" /></p>
+          <ol start="4">
+          <li><p>Once you have imported the file, click the OK button at the bottom of <strong>Custom Resolution Utility</strong>, it will then close</p>
+          </li>
+          <li><p>Reboot your computer for changes to take effect</p>
+          </li>
+          </ol>
+          <p class="page" id="rtss-setup"><h2>RTSS Setup - Enable OSD (On-Screen Display)</h2>
+          <ol>
+          <li><p>Download the latest RivaTuner Statistics Server(<strong>NOTE</strong>: Currently it is 7.3.4 Beta 7), link below:</p>
+          </li>
+          <li><p><a href="https://download-eu2.guru3d.com/rtss/%5BGuru3D.com%5D-RTSSSetup734Beta7Build27504.rar">https://download-eu2.guru3d.com/rtss/%5BGuru3D.com%5D-RTSSSetup734Beta7Build27504.rar</a> </p>
+          </li>
+          <li><p>(If issues downloading, <strong>Right-Click &gt; Copy Link &gt; Paste it into Address Bar</strong>)</p>
+          </li>
+          <li><p>You will need 7-zip(recommended) or WinRar to extract the archive:</p>
+          </li>
+          <li><p><a href="https://www.7-zip.org/">7-Zip (choose 64-bit x64 version)</a></p>
+          </li>
+          <li><p><a href="https://www.rarlab.com/download.htm">WinRAR (choose the latest x64 (64-bit)</a></p>
+          </li>
+          <li><p>Install it, and run the app </p>
+          </li>
+          <li><p>Toggle &quot;<strong>Start with Windows</strong>&quot; and &quot;<strong>Show On-Screen Display</strong>&quot; to &quot;<strong>On</strong>&quot; and then Minimize(don&#39;t click the X or it will close)</p>
+          </li>
+          </ol>
+          <p>Proceed to the next step <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

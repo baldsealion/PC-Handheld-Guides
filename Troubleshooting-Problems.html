@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9. Troubleshooting Problems</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+    <style>.nav > ol > li{display: none;line-height: 0.8;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">9. Troubleshooting Problems</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ">Disclaimer & FAQ</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#Getting-Started">1. Getting Started</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+                  <li class="active">
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html#custom-boot-menus">Custom Dual Boot Menus</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html#wireless-issues">Wireless Speeds / Connection</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html#performance-troubleshooting">Performance & Graphics</a></ol>
+                  </li>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="custom-boot-menus"><h1>Why is my specialized boot menu no longer working / Why is my screen garbled on boot?</h1>
+          <p>You are likely either using rEFInd or Clover - these are the two common dual boot menus for the Steam Deck</p>
+          <p>I would highly recommend you review the source pages for these scripts/applications. If you followed a YouTube video for setup, you may be using an outdated version that already addresses your issue. 
+          <br>Below you will find the links to bo</p>
+          <ul>
+          <li><a href="https://github.com/jlobue10/SteamDeck_rEFInd">rEFInd Github Repo</a></li>
+          <li><a href="https://github.com/ryanrudolfoba/SteamDeck-Clover-dualboot">Clover Github Repo</a></li>
+          </ul>
+          <p>If you have problems that are not listed in their instructions and a new script version does not fix your issue, then make an Issue report on their respective Github.</p>
+          <p class="page" id="wireless-issues"><h1>Wireless Slow/Spotty(Latency spikes, slow downloads)</h1>
+          <p>The following are suggestions that have helped some community members to resolve their wireless issues with the Steam Deck</p>
+          <h2>Install Unlocked Wireless Drivers &amp; Custom Settings</h2>
+          <p>Please follow instructions to download and set up unlocked wireless drivers </p>
+          <ul>
+          <li><a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          </ul>
+          <p>This has been a breakthrough fix that has helped a lot of people, myself included!</p>
+          <h2>Force 5Ghz Mode on Steam Deck</h2>
+          <p>For Wireless Access Points that don&#39;t have a separate SSID for 2.4Ghz and 5Ghz, you can force the Steam Deck to connect to 5Ghz by changing the Wireless Mode in the Driver Configuration:</p>
+          <ul>
+          <li>Go to <strong>Control panel &gt; Hardware and Sound &gt; Device Manager &gt; Expand Network Adapters &gt; Double-Click the RealTek 8822CE Wireless LAN 802.11ac PCI-E-NIC</strong></li>
+          <li>Click the <strong>Advanced</strong> tab and change <strong>Wireless Mode</strong> from Auto to 802.11a/n/ac(depending on which driver is installed, it may not have this option)</li>
+          </ul>
+          <h2>Create a separate 5GHZ SSID for Steam Deck</h2>
+          <p>Some users have reported creating a new SSID and only joining the Steam Deck to it resolved their issues, even on the same wireless access point. Also, it is recommended that if you have a wireless network that broadcasts both 2.4Ghz and 5Ghz, to create a 5Ghz only SSID and join the SteamDeck to this</p>
+          <h2>Try another Wireless Access Point(or Hotspot)</h2>
+          <p>Unfortunately, SteamDeck appears to be extremely picky about the wireless device it&#39;s connected to. If you can try a spare wireless access point, or a hotspot from your phone, this will help determine if the issue is related to your wireless network specifically.</p>
+          <p class="page" id="performance-troubleshooting"><h1>Performance & Graphics Troubleshooting</h1>
+          <h2>My games are slower since APU Upgrade or I get errors when launching games that used to work before upgrade</h2>
+          <p>Unfortunately if you did not choose &quot;Factory Reset&quot; when installing the latest APU drivers, then it is likely that the APU driver is the cause of your performance issues. To fix this, you will need to do the following:</p>
+          <ol>
+          <li><p>Download and run the <a href="https://pixeldrain.com/u/PJCxJh2c">old APU Drivers from June 2016 Here</a></p>
+          </li>
+          <li><p>When running the installer, click the <strong>Additional Options</strong> on the right and then choose <strong>Factory Reset</strong> on the left.</p>
+          </li>
+          <li><p>After this has finished installing/rebooted your Steam Deck, download the <a href="https://help.steampowered.com/en/faqs/view/6121-ECCD-D643-BAA8">current APU Driver from here</a> </p>
+          </li>
+          <li><p>Perform the same steps as in Step 2, with the new driver.</p>
+          </li>
+          <li><p>After the Steam Deck reboots, everything should be good. If you have unlocked the Refresh Rates as outlined in Section 1.5, you will need to use Custom Resolution Utility again and re-import the BIN file.</p>
+          </li>
+          </ol>
+          <h2>Gamepass Games Aren&#39;t Launching</h1>
+          <p>Make sure your Date &amp; Time are accurate in Windows
+          You can fix the time permanently with a registry entry, instructions located here <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#fix-timezone">Fix Timezone by Changing to UTC</a></p>
+          <h2 id="games-look-blurry">Games Look Blurry</h2>
+          <p>You have three options:</p>
+          <ol>
+          <li><p>⁠Change the properties of the game exe and check “Disable Fullscreen Optimizations”</p>
+          </li>
+          <li><p>⁠Get it to run in Windowed mode or Windowed Borderless.</p>
+          </li>
+          <li><p>⁠Use “Borderless Gaming” to force windowed Borderless on a windowed game(not fullscreen), download is below:</p>
+          <p><a href="https://github.com/Codeusa/Borderless-Gaming/releases/">Borderless Gaming - Releases</a></p>
+          </li>
+          </ol>
+          <h2>Online Games have stutter/long load times (Fortnite, Destiny 2)</h2>
+          <p>These stutters are often related to poor wireless performance. Please follow instructions to download and set up unlocked wireless drivers. If you still have issues, please follow the instructions in the same guide about changing custom settings:</p>
+          <ul>
+          <li><a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          </ul>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

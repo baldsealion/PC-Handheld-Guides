@@ -8,8 +8,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  color: #333;
-  background: #f8f8f8;
+  color: whitesmoke;
+  background: #202945;
 }
 
 .hljs-comment,
@@ -21,7 +21,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-subst {
-  color: #333;
+  color: whitesmoke;
   font-weight: bold;
 }
 
@@ -83,11 +83,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 .hljs-deletion {
-  background: #fdd;
+  background: #202945;
 }
 
 .hljs-addition {
-  background: #dfd;
+  background: #202945;
 }
 
 .hljs-emphasis {

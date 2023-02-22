@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>7. Steam Deck Tools</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+    <style>.nav > ol > li{display: none;line-height: 0.8;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">7. Steam Deck Tools</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ">Disclaimer & FAQ</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#Getting-Started">1. Getting Started</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
+                </ol>
+                  <li class="active">
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#software-overview">Overview</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#disclaimers">Disclaimers</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#installation-guide">Installation</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#how-to-use">How to use</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#disable-kernerl-drivers">How to use (Anti-Cheat)</a></ol>
+                </li>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+<p class="page" id="software-overview"></p><h2>Software Overview</h2>
+<p><strong>NOTE: If you already have completed the Section 5. Controller Setup, then you don't need to download or install anything and can skip to the <a href="#how-to-use">How to Use</a> section near the bottom</strong></p>
+<p>These tools(along with RivaTuner Statistics Server-RTSS for short) will let you have an On-Screen Display functionality that can do the following:</p>
+<ul>
+<li>Layout options including Battery, FPS, GPU/CPU, etc</li>
+<li>Change Brightness</li>
+<li>Change Volume</li>
+<li>Change TDP</li>
+<li>Change Refresh Rate</li>
+<li>Change Frame Limiter</li>
+<li>Change Fan Control(see Disclaimer) to SteamOS, Max(as in maximum fan speed) or Default(Windows normal setting)</li>
+<li>Change Resolution by using GPU Scaling</li>
+</ul>
+<p>If you like the software, please donate to the developer! <a href="https://ko-fi.com/ayufan">https://ko-fi.com/ayufan</a></p>
+<p class="disclaimers"><h1>Disclaimers</h1>
+<p class="page" id="anti-cheat-kernel-drivers"><h2><strong>!!WARNING!!</strong> Anti-Cheat Games require Kernel Drivers to be disabled!</h2>
+<p>If you use Steam Deck Tools with Kernel Drivers enabled, you can be banned from online games with anti-cheat functionality! To disable this, follow the steps below (or you can skip to it here, <a href="#disable-kernerl-drivers">Disabling Kernel Drivers for Anti-Cheat</a>)</p>
+<p class="page" id="do-not-use-on-other-devices">DO NOT use on anything besides a Steam Deck</h2>
+<p>This software accesses kernel level functions from memory addresses, specific to the Steam Deck. This overlay and none of these programs are meant to be used on any other hardware besides the SteamDeck. Attempting to do so could result in a potential brick of your hardware if it is NOT a SteamDeck!</p>
+<p class="page" id="steam-deck-fan">Steam Deck Fan</h2>
+<p>To use this app, make sure that you have a supported BIOS(you will get a prompt letting you know if your version is not compatible). Below are the current compatible BIOS versions:</p>
+<ul>
+<li>F7A0107 </li>
+<li>F7A0110 </li>
+<li>F7A0113 </li>
+</ul>
+<p>You can check your version by holding <code>Volume + &amp; Power</code> at startup, then go to <strong>Setup Utility</strong> and it&#39;s at the top of the Main page</p>
+<p>If you want to upgrade your BIOS, please make sure that SteamOS is fully up to date. <strong>NOTE</strong>: there is a manual upgrade process using a BIOS flasher in Windows(there also is a method in SteamOS/Linux), while I have used it myself, it is not recommended due to risk involved and will not be covered here.</p>
+<p class="page" id="installation-guide"></p><h2>Installation Guide</h2>
+<ol>
+<li><p>Download the latest release from Ayufan&#39;s Github(and <a href="https://ko-fi.com/ayufan">please donate</a> if you like the software!):</p>
+</li>
+<li><p><a href="https://github.com/ayufan/steam-deck-tools/releases/latest">https://github.com/ayufan/steam-deck-tools/releases/latest</a></p>
+</li>
+<li><p>Run the installer, leave all defaults checked</p>
+</li>
+<li><p>You may receive a command prompt asking to agree to source terms like below, type <strong>Y</strong> and press <strong>Enter</strong></p>
+</li>
+</ol>
+<p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_3.jpg" /></p>
+<p class="page" id="how-to-use"></p><h2>How to use</h2>
+<ol>
+<li><p>All options can be changed from right-click menu, or while in-game, by holding the <code>3 dots</code> button</p>
+</li>
+<li><p>All changes to resolution, refresh rate and TDP can be reset by holding the <code>3 dots + all back buttons</code>(<code>R4 + R5 + L4 + L5</code>)</p>
+</li>
+<li><p>If this is not working, make sure that in <strong>Riva Tuner Statistics Server</strong>(RTSS) that &quot;<strong>Show On-Screen Display</strong>&quot; is set to &quot;<strong>On</strong>&quot;</p>
+</li>
+<li><p>If you want more information about Hotkey commands and other setup information, please visit the main page <a href="https://steam-deck-tools.ayufan.dev/">https://steam-deck-tools.ayufan.dev/</a></p>
+</li>
+</ol>
+<p class="page" id="disable-kernel-drivers"><h2>How to use for Anti-Cheat games</h2>
+<ol>
+<li>In your <strong>System Tray</strong>, right-click the <strong>Performance Overlay</strong> app and uncheck <strong>Use Kernel Drivers</strong></li>
+</ol>
+<p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SDT_1.png" /></p>
+<ol start="2">
+<li>In your <strong>System Tray</strong>, right-click the <strong>Steam Deck Fan&quot;&quot; app and set it to </strong>Default** if not set already (SteamOS or Max mode enables Kernel Drivers)</li>
+</ol>
+<p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SDT_2.png" /></p>
+<br><p>Proceed to the next step <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

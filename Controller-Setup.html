@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5. Controller Setup</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+    <style>.nav > ol > li{display: none;line-height: 0.8;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">5. Controller Setup</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">        
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ">Disclaimer & FAQ</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#Getting-Started">1. Getting Started</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+                </ol>
+                <li class="active">
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html#what-is-this">What is this App?</a></ol>
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html#should-i-replace-swicd">SWICD Replacement?</a></ol>
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html#i-want-to-replace-swicd">Let's Replace SWICD</a></ol>
+                  <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html#steamcontroller-installation-setup">SteamController Setup</a></ol>
+              </li>               
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="what-is-this"></p><h2><em>What is this Application ?</em></h2>
+          <p>Steam Deck Tools - SteamController app is a fully functional controller application that works on both Steam and non-steam games.
+          Non-Steam games are treated as a Xbox360 Controller unless you run it through Steam Input(more on this configuration later)</p>
+          <p>This application is being constantly updated on a frequent basis. While this guide will try to provide as up-to-date of details as possible, it is recommended that you review the latest release notes and front-page for setup and configuration located here -- <a href="https://steam-deck-tools.ayufan.dev/">https://steam-deck-tools.ayufan.dev/</a></p>
+          <br>
+          <p>If you don't have SWICD, skip to <a href="#steamcontroller-installation-setup">Steam Controller Installation Setup</a></p>
+          <p class="page" id="should-i-replace-swicd"></p><h2><em>I have SWICD, should I replace it?</em></h2>
+          <p>I say yes, it is worth replacing at this point. SteamController can work together with Steam Input, with one menu click and is continuing to have more improvements/features and bug fixes. It also relies on less third-party applications to function.</p>
+          <p class="page" id="i-want-to-replace-swicd"></p><h2><em>OK I want to replace SWICD, what do I do?</em></h2>
+          <ol>
+          <li>Open HidHide and click the Devices tab, make sure that all of the settings on the bottom are unchecked, then uncheck any devices</li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_1.jpg" /></p>
+          <ol start="2">
+          <li>In Control Panel, open Task Scheduler(you can search in Windows for this) and delete the <strong>HidHide_Updater</strong> task. You can also optionally delete HidHide executable from your Deck entirely as it is not needed</li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_2.jpg" /></p>
+          <ol start="3">
+          <li><p>Uninstall the following applications through Control Panel:</p>
+          </li>
+          <li><p>mKenfenheuer (this is SWICD Controller Driver) - If you do not see this, or it does not uninstall successfully, delete the following folder: </p><p class="page"><em>C:\Program Files\Maximilian Kenfenheuer</em></p>
+          </li>
+          <li><p>HID Virtual Device Kit Standard 2.1 (this is Tetherscript)</p>
+          </li>
+          </ol>
+          <p>You are now ready to install Steam Deck Tools</p>
+          <h1 id="steamcontroller-installation-setup">SteamController Installation &amp; Setup</h1>
+          <ol>
+          <li><p>First make sure you have <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#visual-c-modules">Visual C++ Modules</a> installed, then download the latest &quot;setup&quot; release:</p>
+          </li>
+          <li><p><a href="https://github.com/ayufan/steam-deck-tools/releases/latest">https://github.com/ayufan/steam-deck-tools/releases/latest</a></p>
+          </li>
+          <li><p>Run the installer, leave all defaults checked</p>
+          </li>
+          <li><p>You may receive a command prompt asking to agree to source terms like below, type <strong>Y</strong> and press <strong>Enter</strong></p>
+          </li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_3.jpg" /></p>
+          <ol start="4">
+          <li>After installation, you should have 4 icons in your System Tray, some will be black icons(meaning they are working-- may be hard to visibly see in Dark Mode), some may be red icons, which is OK for now(we will address in Section 1.5 &amp; 1.6)</li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_4.jpg" /></p>
+          <ol start="5">
+          <li><p>Locate the SteamController icon and right-click it. Here you can choose the behavior of Steam Input if you have Steam installed. You have 3 options:</p>
+          </li>
+          <li><p>Ignore Steam (this is the default setting, which will not make any changes to Steam and expects you to not use Steam at all for gaming)</p>
+          </li>
+          <li><p>Use X360 Controller with Steam (this means all Steam Games will function like a X360 Controller)</p>
+          </li>
+          <li><p>Use Steam Input with Steam (this means when playing a native Steam Game((not a non-steam game inside Steam)), it will see your controller as a Steam Deck controller)</p>
+          </li>
+          </ol>
+          <p>If you choose either of the two options, you will get a prompt about this, once clicking OK, Steam will close</p>
+          <ul>
+          <li><p><strong>IF</strong> you chose <strong>Use X360 Controller with Steam</strong> - Skip Steps 6 &amp; 7</p>
+          </li>
+          <li><p><strong>IF</strong> you chose <strong>Use Steam Input with Steam</strong> - Follow steps 6 &amp; 7</p>
+          </li>
+          </ul>
+          <ol start="6">
+          <li><p>Re-open Steam manually - and go to the Desktop version if it launches in Big Picture Mode</p>
+          </li>
+          <li><p>Go into <strong>Steam &gt; Settings &gt; Controller &gt; DESKTOP CONFIGURATION</strong> and choose &quot;<strong>Browse Configs</strong>&quot; on the bottom, choose the &quot;<strong>SteamController provided empty configuration</strong>&quot; and click &quot;<strong>APPLY CONFIGURATION</strong>&quot; and then &quot;<strong>DONE</strong>&quot;</p>
+          </li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_6.jpg" /></p>
+          <ol start="8">
+          <li>That&#39;s it! If you want to change the Haptic vibration for Non-Steam games, right-click SteamController in System Tray and choose <strong>Settings</strong> and here you can set the &quot;<strong>LeftIntensity</strong>&quot; and &quot;<strong>RightIntensity</strong>&quot;</li>
+          </ol>
+          <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/SteamController_5.jpg" /></p>
+          <ol start="9">
+          <li><p>There are other settings you can set for assigning Back Buttons on Non-Steam games</p>
+          </li>
+          <li><p>To toggle between Desktop and X360 controls, you can hold the Start button(3 dashes) for 3 seconds, and you will hear a noise in Windows from the device being changed</p>
+          </li>
+          <li><p>For a list of System Hotkey Combos, right-click SteamController and click on &quot;<strong>Shortcuts</strong>&quot;</p>
+          </li>
+          <li><p><strong>NOTE:</strong> The Steam Deck Tools suite comes with additional apps (Performance Overlay, PowerControl and Steam Deck Fan) - it is highly recommended you follow the rest of this guide for proper setup -- and be sure to <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html#disclaimers">read all of the Disclaimers</a> </p>
+          </li>
+          <li><p>If you like the software, please donate to the developer! <a href="https://ko-fi.com/ayufan">https://ko-fi.com/ayufan</a></p>
+          </li>
+          </ol>
+          <p>To continue setup, please Proceed to <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Unlocking Refresh Rate & RTSS</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

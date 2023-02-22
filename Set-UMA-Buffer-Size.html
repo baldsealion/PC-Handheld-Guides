@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1. Getting Started</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" />
+<link href="github.css" rel="stylesheet" />
+<link href="doc.css" rel="stylesheet" />
+    <style>.nav > ol > li{display: none;line-height: 0.8;}</style>
+    <script src="jquery.min.js" type="javascript"></script>
+<script src="bootstrap.min.js" type="javascript"></script>
+  </head>
+  <body id="page-top" class="html-doc">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand doc-title" href="#page-top">2. Set UMA Buffer Size</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div id="documentation-container" class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-container">
+            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
+              <span class="toc">Table of contents</span>
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ">Disclaimer & FAQ</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#Getting-Started">1. Getting Started</a>
+                </ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a> 
+                  <li class="active">
+                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html#what-is-this-for-">What is this for?</a></ol>
+                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size#change-bios-vram-size">Change BIOS VRAM size</a></ol>
+                  </li>               
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenaline-Software.html">4. AMD Adrenaline Software</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">5. Refresh Rate and RTSS</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">6. Steam Deck Tools</a>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">7. Quality of Life Improvements</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">8. Troubleshooting Problems</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="what-is-this-for-"></p><h2><em>What is this For?</em></h2>
+            <p>Changing this assigns the minimum amount of RAM allocated for the GPU. Setting to 4GB is required for Guardians of the Galaxy and maybe other games.</p>
+            <p>In testing has also decreased stutter and increased overall in-game performance.</p>
+            <p>Red Dead Redemption 2 seems to do best with the setting at 2GB</p>
+          <p>This can always be changed back. In rare circumstances, this can have a negative impact for performance on games(for games that specifically demand more RAM than VRAM). In this instance you can change it back to the default value of 1G</p>
+          <p class="page" id="change-bios-vram-size-"></p><h2>Change BIOS VRAM size:</h2>
+          <ul>
+          <li>With the deck shut down, Hold &quot;<strong>volume +</strong>&quot; and press the <strong>power</strong> button</li>
+          </ul>
+          <p>Here is where you will change your core HW settings.</p>
+          <p>On the menu that appears choose &quot;<strong>Setup Utility</strong>&quot;</p>
+          <ul>
+          <li><p><strong>Advanced &gt; UMA Frame buffer size</strong></p>
+          </li>
+          <li><p>select <strong>2G or 4G</strong></p>
+          </li>
+          <li><p>press the [two squares] button next to the D-pad to exit and save changes.</p>
+          </li>
+          </ul>
+          <p>Proceed to the next step <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>
