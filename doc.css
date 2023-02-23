@@ -397,6 +397,12 @@ span.float-right {
     color: rgb(102, 102, 102)
 }
 
+@media (max-width: 767px) {
+    .toc {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
     .html-doc .nav-container > .nav-inner {
         position: relative;
@@ -425,4 +431,10 @@ span.float-right {
         min-width: 200px;
     }
 }
+
+
+
+
+
+
 
