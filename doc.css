@@ -1,4 +1,18 @@
  /*General for HTML and PDF*/
+
+ header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding: 2%;
+  width: 100%;
+}
+
+.header-link {
+  text-align: center;
+}
+
+
 body {
   font-family: Helvetica, arial, sans-serif;
   font-size: 1.5em;
@@ -29,6 +43,33 @@ a.anchor {
   top: 0;
   left: 0;
   bottom: 0; }
+
+
+.navbar-header {
+  display: inline-block;
+  color:#cccccc;
+  left: 0;
+  top: 0;
+  padding: 2%;
+  text-align: left;
+  max-width: 25%;
+}
+
+.navbar {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 2%;
+  max-width: 200px;
+  text-align: left;
+}
+
+.container {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 4% 0 2%;
@@ -138,126 +179,12 @@ ul :first-child, ol :first-child {
 ul :last-child, ol :last-child {
   margin-bottom: 0; }
 
-dl {
-  padding: 0; }
-  dl dt {
-    font-size: 14px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 0;
-    margin: 15px 0 5px; }
-    dl dt:first-child {
-      padding: 0; }
-    dl dt > :first-child {
-      margin-top: 0; }
-    dl dt > :last-child {
-      margin-bottom: 0; }
-  dl dd {
-    margin: 0 0 15px;
-    padding: 0 15px; }
-    dl dd > :first-child {
-      margin-top: 0; }
-    dl dd > :last-child {
-      margin-bottom: 0; }
 
-blockquote {
-  border-left: 4px solid #dddddd;
-  padding: 0 15px;
-  font-size: 14px;
-  color: #777777; }
-  blockquote > :first-child {
-    margin-top: 0; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
 
-table {
-  padding: 0; }
-  table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0; }
-    table tr:nth-child(2n) {
-      background-color: #f8f8f8; }
-    table tr th {
-      font-weight: bold;
-      border: 1px solid #cccccc;
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr td {
-      border: 1px solid #cccccc;
-      text-align: left;
-      margin: 0;
-      padding: 6px 13px; }
-    table tr th :first-child, table tr td :first-child {
-      margin-top: 0; }
-    table tr th :last-child, table tr td :last-child {
-      margin-bottom: 0; }
+
 
 img {
   max-width: 100%; }
-
-span.frame {
-  display: block;
-  overflow: hidden; }
-  span.frame > span {
-    border: 1px solid #dddddd;
-    display: block;
-    float: left;
-    overflow: hidden;
-    margin: 13px 0 0;
-    padding: 7px;
-    width: auto; }
-  span.frame span img {
-    display: block;
-    float: left; }
-  span.frame span span {
-    clear: both;
-    color: white;
-    display: block;
-    padding: 5px 0 0; }
-span.align-center {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-center > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: center; }
-  span.align-center span img {
-    margin: 0 auto;
-    text-align: center; }
-span.align-right {
-  display: block;
-  overflow: hidden;
-  clear: both; }
-  span.align-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px 0 0;
-    text-align: right; }
-  span.align-right span img {
-    margin: 0;
-    text-align: right; }
-span.float-left {
-  display: block;
-  margin-right: 13px;
-  overflow: hidden;
-  float: left; }
-  span.float-left span {
-    margin: 13px 0 0; }
-span.float-right {
-  display: block;
-  margin-left: 13px;
-  overflow: hidden;
-  float: right; }
-  span.float-right > span {
-    display: block;
-    overflow: hidden;
-    margin: 13px auto 0;
-    text-align: right; }
 
 .nav-container  ul, .nav-container  ol {
     margin-left: 0px;
@@ -266,12 +193,6 @@ span.float-right {
 
 .nav {
     margin:0;
-}
-
-.nav-inner > .nav, .nav-inner > .nav > li > .nav {
-    border-bottom: 1px solid black;
-    margin-bottom: 2px;
-    margin-top: 2px;
 }
 
 .nav-inner > .nav > li:last-child > .nav {
@@ -290,112 +211,36 @@ span.float-right {
     line-height: 1.2;
     padding: 2% 4%;
 }
-.nav > li > a {
-    display: block;
-    padding: 0.8% 3.6%;
-    font-size: 2em;
-    font-weight: 500;
-}
 
-.nav > li > .nav > li > a {
-    padding:2px 28px;
-    font-size: 0.92em;
-    font-weight: 400;
-}
-
-.nav > li > .nav > li > .nav > li  > a {
-    padding:2px 36px;
-    font-size: 0.86em;
-    font-weight: 400;
-}
-
-.nav > li > .nav > li > .nav > li > .nav > li  > a {
-    padding:2px 44px;
-    font-size: 0.86em;
-    font-weight: 400;
-}
-
-.nav li span {
-    margin: 0 0;
-    padding: 3px 18px;
-    font-size: inherit;
-    color:black;
-}
 
 /*For HTML*/
 .html-doc {
-    padding-top: 10% !important;
+    padding-top: 3% !important;
+    padding-left: 3%;
+    margin-left: 3%;
 }
 
-.html-doc .footer {
-    font-size: 85%;
-    margin-top: 4%;
-    width: 250px;
-}
 
 .page:before {
-    content:"";
-    display:block;
-    height:55px; /* fixed header height*/
-    margin:-55px 0 0; /* negative fixed header height */
+  content:"";
+  display:block;
+  height:55px; /* fixed header height*/
+  margin:-55px 0 0; /* negative fixed header height */
 }
 
 .page {
-    height:1px;
-    font-size:1px;
-    width: 1px;
-    padding:50px 0 0 0;
-    margin: -50px 0 0 0;
-}
-
-.html-doc .nav-container {
-    margin-top: 2%;
-    position: relative;
-}
-
-.html-doc .logo-img {
-    padding: 2%;
-    margin:1.7% 0 0 0;
-    max-width:75%;
-    max-height:25%;
-}
-
-.html-doc .nav-container .toc {
-    display: block;
-    color:whitesmoke;
-    text-transform: uppercase;
-    padding: 0.5% 3.6%;
-    font-weight: 800;
-    font-size:90%
-    font-family: Arial;
-}
-
-.html-doc .nav-container > .nav-inner {
-    position: fixed;
+  height:1px;
+  font-size:1px;
+  width: 1px;
+  padding:50px 0 0 0;
+  margin: -50px 0 0 0;
 }
 
 .html-doc .nav li a:before, .html-doc .nav li span:before {
     content: "\00B7  ";
 }
 
-.html-doc .nav li.active > a {
-    color:#6db8ae;
-}
 
-.html-doc .nav li.active > a:before {
-    content: "\25b8  ";
-}
-
-.navbar-default .navbar-nav>li>a.generated-by,
-.navbar-default .navbar-nav>li>a.generated-by:visited {
-    font-size: 85%;
-    color:#ADADAD;
-    text-shadow: 0.2% 0.2% 0 #fff;
-}
-
-.navbar-default .navbar-nav>li>a.generated-by:hover {
-    color: rgb(102, 102, 102)
-}
 
 @media (max-width: 992px) {
     .html-doc .nav-container > .nav-inner {
@@ -404,6 +249,20 @@ span.float-right {
         margin: 0 auto;
         display: none;
     }
+}
+
+@media (max-width: 992px) {
+  .html-doc .nav {
+      text-align: center;
+      font-size: 1.2em;
+  }
+}
+
+@media (max-width: 992px) {
+  .html-doc {
+      text-align: left;
+      font-size: 1.7em;
+  }
 }
 
 @media (min-width: 768px) {

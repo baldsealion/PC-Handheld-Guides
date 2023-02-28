@@ -13,89 +13,68 @@
 <script src="jquery.min.js" type="javascript"></script>
 <script src="bootstrap.min.js" type="javascript"></script>
   </head>
+  <header>
+    <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide" class="header-link">Steam Deck Ultimate Windows Guide</a>
+  </header>
   <body id="page-top" class="html-doc">
-    <base href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide">
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand doc-title" href="#page-top">Bald Sealion's Steam Deck Ultimate Windows Guide</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
+    <div>
+      <div>
+       <div>
           <ul class="nav navbar-nav">
-          
+            <ol class="nav">
+                <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ" onclick="showChild(event)">Disclaimer & FAQ</a>
+                <li>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#disclaimer-please-read">Disclaimer Please Read</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-are-we-doing-here-">What are we doing here?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-official-dual-boot-available-">Has Valve released Dual Boot?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#will-this-possibly-brick-my-device-">Can this brick my Steam Deck?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#windows-10-or-windows-11-">Windows 10 or Windows 11?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#which-versions-can-dual-boot-">Which Steam Decks can Dual Boot?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#can-i-use-a-microsd-for-windows-">Can I use a micro SD for Windows?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-about-an-external-solid-state-drive-">What about an external SSD?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#are-there-any-issues-with-external-solid-state-drives-">Any issues with external SSDs?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-gaming-performance-">How is the gaming performance?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-battery-life-">How is the Battery Life?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-there-fan-control-for-windows-">Is there Fan Control in Windows?</a></ol>
+                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#anything-windows-cannot-do-">Anything Windows cannot do?</a></ol>
+              </li>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html">1. Getting Started</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
+              </ol>
+              <ol>
+                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+              </ol>
         </div><!--/.nav-collapse -->
       </div>
     </div>
-    <script>
-      function showChild(e) 
-      {
-        var child = e.target.nextElementSibling;
-        if (child.style.display == "none") 
-        {
-          child.style.display = "block";}
-        else 
-        {
-          child.style.display = "none";}
-      }
-    </script>
     <div id="documentation-container" class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="nav-container">
             <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
-              <span class="toc">Table of contents</span>
-              <ol class="nav">
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ" onclick="showChild(event)">Disclaimer & FAQ</a>
-                  <li>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#disclaimer-please-read">Disclaimer Please Read</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-are-we-doing-here-">What are we doing here?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-official-dual-boot-available-">Has Valve released Dual Boot?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#will-this-possibly-brick-my-device-">Can this brick my Steam Deck?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#windows-10-or-windows-11-">Windows 10 or Windows 11?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#which-versions-can-dual-boot-">Which Steam Decks can Dual Boot?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#can-i-use-a-microsd-for-windows-">Can I use a micro SD for Windows?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-about-an-external-solid-state-drive-">What about an external SSD?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#are-there-any-issues-with-external-solid-state-drives-">Any issues with external SSDs?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-gaming-performance-">How is the gaming performance?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-battery-life-">How is the Battery Life?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-there-fan-control-for-windows-">Is there Fan Control in Windows?</a></ol>
-                      <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#anything-windows-cannot-do-">Anything Windows cannot do?</a></ol>
-                </li>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html">1. Getting Started</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
-                </ol>
-                <ol>
-                  <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
-                </ol>
+
             </div>
           </div>
         </div>
