@@ -9,22 +9,32 @@
 <link href="default.css" rel="stylesheet" />
 <link href="github.css" rel="stylesheet" />
 <link href="doc.css" rel="stylesheet" />
-<style>.nav > ol > li{display: none;line-height: 1;}</style>
 <script src="jquery.min.js" type="javascript"></script>
 <script src="bootstrap.min.js" type="javascript"></script>
+<script>
+function showChild(e) {
+  var child = e.target.nextElementSibling;
+  if (child.style.display == "none") {
+    child.style.display = "block";
+  } else {
+    child.style.display = "none";
+  }
+  return false;
+}
+
+</script>
   </head>
   <header>
     <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide" class="header-link">Steam Deck Ultimate Windows Guide</a>
   </header>
   <body id="page-top" class="html-doc">
-    <div>
+    <div></div>
       <div>
        <div>
           <ul class="nav navbar-nav">
             <ol class="nav">
-                <ol>
                 <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ" onclick="showChild(event)">Disclaimer & FAQ</a>
-                <li>
+                <li class="active" style="display: none">
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#disclaimer-please-read">Disclaimer Please Read</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-are-we-doing-here-">What are we doing here?</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-official-dual-boot-available-">Has Valve released Dual Boot?</a></ol>
@@ -38,7 +48,7 @@
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-battery-life-">How is the Battery Life?</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-there-fan-control-for-windows-">Is there Fan Control in Windows?</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#anything-windows-cannot-do-">Anything Windows cannot do?</a></ol>
-              </li>
+                </li>
               </ol>
               <ol>
                 <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html">1. Getting Started</a>
@@ -66,21 +76,11 @@
               <ol>
                 <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
               </ol>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-    <div id="documentation-container" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="nav-container">
-            <div class="nav-inner" id="scroll-spy" style="width: min-content; overflow: auto; top: 60px; bottom: 0; padding 10px 0 10px 0;">
-
+            </ul>
             </div>
           </div>
         </div>
-
-
-        <div class="col-md-9">
+      <div class="col-md-9">
 <p class="page" id="Disclaimer-and-FAQ"></p><h1>Disclaimer and FAQ</h1>
 <p class="page" id="disclaimer-please-read"></p><h2><strong>!! Disclaimer & Notes: PLEASE READ !!</strong></h2>>
 <ul>
