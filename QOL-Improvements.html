@@ -62,7 +62,7 @@
           <p class="page" id="improving-audio"><h1>Improving Audio</h1>
           <p>&quot;Better Audio&quot; is always a very subjective/relative thing and even in the world of Steam Deck, not all speakers are created equal. However, according to most community members, this will have a &quot;huge difference in games with music and general music with exposed treble, it tones down the harshness and balances the sound out&quot;</p>
           <p>Follow all of the instructions below for the preferred audio setup(don&#39;t skip any steps).</p>
-          <p class="page" id="equalizer-apo">Equalizer APO</h2>
+          <p class="page" id="equalizer-apo"><h2>Equalizer APO</h2>
           <p>Download and install the following software:</p>
           <p><a href="https://sourceforge.net/projects/equalizerapo/">Equalizer APO - Sourceforge</a></p>
           <p>At the end of the install, it will ask which device to be assigned to, we want the &quot;Speakers&quot; of the &quot;AMD Audio Device&quot;</p>
@@ -70,7 +70,7 @@
           <p>After clicking OK, say &quot;I want to manually reboot later&quot;</p>
           <p>Download the following Audio Zip file, extract it to <strong>C:\Program Files\EqualizerAPO\config</strong> and overwrite any existing files</p>
           <p><a href="https://raw.githubusercontent.com/baldsealion/Steamdeck-Ultimate-Windows11-Guide/main/Peace%20settings/SteamDeck.peace">Peace Steam Deck Config</a> (Right-click and Save As)</p>
-          <p class="page" id="peace-gui">Peace GUI</h2>
+          <p class="page" id="peace-gui"><h2>Peace GUI</h2>
           <p>Download and install Peace GUI</p>
           <ul>
           <li><a href="https://sourceforge.net/projects/peace-equalizer-apo-extension/files/latest/download">Peace GUI - SourceForge</a></li>
@@ -89,6 +89,32 @@
           <p>This doesn&#39;t need to run at startup or anything. Reboot for all changes to take effect.</p>
           <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/Audio_3.png" /></p>
           <p class="page" id="graphics-performance-enhancements"></p><h1>Graphics & Performance Enhancements</h1>
+          <p class="page" id="Lossless Scaling"><h2>Lossless Scaling</h1>
+          <p>Lossless Scaling is an application that can upscale games(yes it has FSR as an option) and can be purchased directly on the Steam Store for $5 or less:</p>
+          <ul>
+          <li><a href="https://store.steampowered.com/app/993090/Lossless_Scaling">Lossless Scaling Steam Store Page</a></li>
+          </ul>
+          <p>This app can fix the issues with certain situations for games, such as:</p>
+          <ul>
+          <li>Games that do not have 800p option</li>
+          <li>Games that when launched have a black screen</li>
+          <li>Games that do not have a windowed borderless mode</li>
+          </ul>
+          <p>There are other options, such as MagPie or Borderless Gaming, but Lossless Scaling is cheap, works better(in my experience) and received updates often
+          <p>Lossless Scaling is DRM Free and it can be copied outside the SteamApps folder(and then ran without Steam)</p>
+          <p>Here are some instructions to set it up:</p>
+          <ol>
+            <li>Purchase and download it</li>
+            <li>Optionally, copy the lossless scaling from outside your SteamApps folder to something else(this is so Steam does not launch when you start it)</li>
+            <li>Run it once, set the <strong>Scaling Type</strong> to <strong>LS1</strong>(this is recommended over AMD FSR, but the option is there) and then click the <strong>Settings button</strong></li>
+            <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/Lossless_Scaling_1.png"></p> 
+            <li>If you are using Steam Deck Tools SteamController, then set the Scale Hotkey to <code>Steam + D-PAD Up</code></li>
+            <li>Toggle on <strong>Start as Administrator</strong> (the word on the street is performance is better with this enabled)</li>
+            <li>Toggle on <strong>Start minimized at Windows startup</strong> and <strong>Minimize to tray</strong> then click <strong>Close</strong></li>
+            <p><img src="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/images/Lossless_Scaling_2.png"></p> 
+            <li>To make this work, you need to launch games in Window mode. If you are having trouble figuring out how to do this, search the <a href="https://www.pcgamingwiki.com/wiki/Home">PCGaming Wiki</a> for your game and how to enable Window mode</li>
+            <li>Once the game is in Window mode, set your desired in-game resolution, then scale it up with the hotkey you assigned (previously we set this to <code>Steam + D-Pad Up</code></li>
+          </ol>
           <p class="page" id="dxvk"><h2>DXVK (Vulkan Direct3D Rendering on Windows)</h1>
           <p>Some games may function better in SteamOS thanks to Vulkan Shader-caching. However, Windows has the same capabilities. A couple things to note however is that it is not recommended for online games with anti-cheat as it could result in a ban due to the modification/addition to game files -- and it does not work for Gamepass games in testing.</p>
           <p>You can set this up by following the YouTube guide here (highly recommend DXVK A-Sync):</p>
