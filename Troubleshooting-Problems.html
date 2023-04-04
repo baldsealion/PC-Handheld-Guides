@@ -56,6 +56,13 @@
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html#wireless-issues">Wireless Speeds / Connection</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html#performance-troubleshooting">Performance & Graphics</a></ol>
                   </li>
+                  </ol>
+                  <ol>
+                    <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
+                  </ol>
+                  <ol>
+                    <div style="color: #0f0f0f;">.</div>
+                </ol>
             </div>
           </div>
         </div>
@@ -71,12 +78,19 @@
           <p>If you have problems that are not listed in their instructions and a new script version does not fix your issue, then make an Issue report on their respective Github.</p>
           <p class="page" id="wireless-issues"><h1>Wireless Slow/Spotty(Latency spikes, slow downloads)</h1>
           <p>The following are suggestions that have helped some community members to resolve their wireless issues with the Steam Deck</p>
-          <h2>Install Unlocked Wireless Drivers &amp; Custom Settings</h2>
-          <p>Please follow instructions to download and set up unlocked wireless drivers </p>
+          <h2>Install Better Wireless Drivers &amp; Custom Settings</h2>
+          <p>There are two drivers you can use:</p>
           <ul>
-          <li><a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          <ol>
+          <li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=2024.10.138.3">Official RealTek 8822CE - 2024.10.138.3</a></li>
+          <p>This is recommended first because it is an official driver and it does not have battery drain issues that the other driver below has<p>
+          <p>Just choose the appropriate file for your version of Windows, extract it from the zip/cab and then right-click on the .inf file and choose install</p>
+          <li><a href="https://www.techpowerup.com/forums/threads/realtek-8822ce-modded-wireless-drivers-with-enabled-advanced-features.283920/">Modified Killer WiFi Drivers for RealTek 8822CE</a></li>
+          <p>As stated, this will drain your battery in sleep mode, but is proven to have the best performance possible</p>
+          <p>Here is a guide to show how to install this update: Ryan Rudolf's Steam Deck WiFi Fix for Windows</p>
+          <a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          </ol>
           </ul>
-          <p>This has been a breakthrough fix that has helped a lot of people, myself included!</p>
           <h2>Force 5Ghz Mode on Steam Deck</h2>
           <p>For Wireless Access Points that don&#39;t have a separate SSID for 2.4Ghz and 5Ghz, you can force the Steam Deck to connect to 5Ghz by changing the Wireless Mode in the Driver Configuration:</p>
           <ul>
