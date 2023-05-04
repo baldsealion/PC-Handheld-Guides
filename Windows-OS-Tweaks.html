@@ -103,7 +103,9 @@
           <p>Right-click the Desktop background and choose <strong>Display Settings</strong> 
           and under <strong>Scale &amp; Layout</strong> change <strong>Scale</strong> from 125% to 100%</p>
           <p class="page" id="disabling-hibernation"><h2>Fix Sleep Mode - Disabling Hibernation</h2>
-          <p>Hibernation is unnecessary and can result in BSODs. Additionally it consumes space. Run Command Prompt as Administrator and enter the following:</p>
+          <p>Hibernation is unnecessary and can result in BSODs. Additionally it consumes space. Open a Command-Prompt as Administrator and type the following:</p>
+          <p><code>powercfg -h off</code></p>
+          <p>If you are using an external SSD for Windows, then it is recommended instead to do the following:</p>
           <p><code>Powercfg /h on</code>
           <code>Powercfg /h /type reduced</code></p>
           <p class="page" id="fix-timezone"><h2>Fix Timezone by changing to UTC</h2>
