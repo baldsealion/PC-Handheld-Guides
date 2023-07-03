@@ -108,6 +108,13 @@
           <h2>My audio on my TV doesn't work</h2>
           <p>This sounds silly, but it works: Go into <strong>Control Panel > Hardware and Sounds > Sound</strong> and then disable the Steam Deck's audio device, then re-enable it, then make sure the primary is set to your TV audio.
           <p class="page" id="performance-troubleshooting"><h1>Performance & Graphics Troubleshooting</h1>
+          <h2>I get a "MS-Gamebar" pop-up every time I press the STEAM button or open an app</h2>
+          <p>This can happen for a few different reasons(custom Windows, MS-Gamebar missing from your computer), but ultimately it is because Windows is making a call to open Gamebar and it can't find that app. You have two options:</p>
+          <p>1. Download the Gamebar app from the App Store and make sure Game Bar is turned on in your Windows Settings</p>
+          <ol>
+          <li><p>2. Disable Gamebar completely - Download and run this as Administrator: <a href="https://github.com/baldsealion/Steam-Deck-Ultimate-Windows-Guide/blob/main/ms-gamebar%20fix/Run_As_Admin_Fix_Gamebar.bat">Run_As_Admin_Fix_Gamebar.bat</a></p>
+          </li>
+          <p>What it does is re-route any Microsoft calls for Gamebar to do nothing. If you don't trust that it will not harm your computer, just copy the code of the batch file into ChatGPT and have it anaylze the code. It is safe.</p>
           <h2>My games are slower since APU Upgrade or I get errors when launching games that used to work before upgrade</h2>
           <p>It is likely that the APU driver is the cause of your performance issues. There have been performance complaints(although I have not personally seen them). To fix this, you will need to do the following:</p>
           <ol>
