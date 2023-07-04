@@ -45,7 +45,6 @@
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-uac">Disable UAC</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-upgrades-updates">Disable Updates & Upgrades</a></ol>
                     <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-telemetry">Disable Telemetry</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#remove-windows-defender">Remove Windows Defender</a></ol>
                 </li>               
                 </ol>
                 <ol>
@@ -158,22 +157,6 @@
           </li>
           <li>Repeate this for automatic updates if you would like</li>
           </ul>
-          <p class="page" id="remove-windows-defender"><h2>Remove/Disable Windows Defender Completely(OPTIONAL)</h2>
-          <p>Major security risk -- so entirely optional. For this I won&#39;t provide &quot;easy&quot; instructions because it&#39;s not recommended for the average user, but the instructions below will do this(disabling Real-Time protection stuff in normal Windows, won&#39;t completely disable it):</p>
-          <ul>
-          <li>Boot into Safe Mode and open Registry Editor</li>
-          <li>Navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Service</li>
-          </ul>
-          <p>Change the following folders key &quot;Start&quot; DWORD to value &quot;4&quot;</p>
-          <ul>
-          <li>Sense</li>
-          <li>WdBoot</li>
-          <li>WdFilter</li>
-          <li>WdNisDrv</li>
-          <li>WdNisSvc</li>
-          <li>WinDefend</li>
-          </ul>
-          <p>Once done restart back to normal boot</p>
           <p>Proceed to the next step <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a></p>
         </div> <!-- /div.col-md-9 -->
       </div> <!-- /div.row -->
