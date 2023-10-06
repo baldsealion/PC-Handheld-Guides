@@ -1,162 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bald Sealion's Steam Deck Ultimate Windows Guide</title>
     <link href="bootstrap.min.css" rel="stylesheet" />
-<link href="default.css" rel="stylesheet" />
-<link href="github.css" rel="stylesheet" />
-<link href="doc.css" rel="stylesheet" />
-<script src="jquery.min.js" type="javascript"></script>
-<script src="bootstrap.min.js" type="javascript"></script>
-<script>
-function showChild(e) {
-  var child = e.target.nextElementSibling;
-  if (child.style.display == "none") {
-    child.style.display = "block";
-  } else {
-    child.style.display = "none";
-  }
-  return false;
-}
+    <link href="default.css" rel="stylesheet" />
+    <link href="github.css" rel="stylesheet" />
+    <link href="doc.css" rel="stylesheet" />
+    <script src="jquery.min.js" type="javascript"></script>
+    <script src="bootstrap.min.js" type="javascript"></script>
+    <style>
+        /* CSS to center-align paragraphs */
+        p {
+            text-align: center;
+        }
 
-</script>
-  </head>
-  <header>
-    <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide" class="header-link">Steam Deck Ultimate Windows Guide</a>
-  </header>
-  <body id="page-top" class="html-doc">
-    <div></div>
-      <div>
-       <div>
-          <ul class="nav navbar-nav">
-            <ol class="nav">
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#Disclaimer-and-FAQ" onclick="showChild(event)">Disclaimer & FAQ</a>
-                <li class="active" style="display: none">
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#disclaimer-please-read">Disclaimer Please Read</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-are-we-doing-here-">What are we doing here?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-official-dual-boot-available-">Has Valve released Dual Boot?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#will-this-possibly-brick-my-device-">Can this brick my Steam Deck?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#windows-10-or-windows-11-">Windows 10 or Windows 11?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#which-versions-can-dual-boot-">Which Steam Decks can Dual Boot?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#can-i-use-a-microsd-for-windows-">Can I use a micro SD for Windows?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#what-about-an-external-solid-state-drive-">What about an external SSD?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#are-there-any-issues-with-external-solid-state-drives-">Any issues with external SSDs?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-gaming-performance-">How is the gaming performance?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#how-is-the-battery-life-">How is the Battery Life?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#is-there-fan-control-for-windows-">Is there Fan Control in Windows?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#anything-windows-cannot-do-">Anything Windows cannot do?</a></ol>
-                    <ol><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/index.html#show-support-">How can I show my thanks?</a></ol>
-                </li>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html">1. Getting Started</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Set-UMA-Buffer-Size.html">2. Set UMA Buffer Size</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/AMD-Adrenalin-Software.html">4. AMD Adrenalin Software</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Controller-Setup.html">5. Controller Setup</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Refresh-Rate-and-RTSS.html">6. Refresh Rate and RTSS</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Steam-Deck-Tools.html">7. Steam Deck Tools</a>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html">8. Quality of Life Improvements</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
-              </ol>
-              <ol>
-                <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
-              </ol>
-              <ol>
-                <div style="color: #0f0f0f;">.</div>
-              </ol>
-            </ul>
-            </div>
-          </div>
-        </div>
-      <div class="col-md-9">
-<p class="page" id="Disclaimer-and-FAQ"></p><h1>Disclaimer and FAQ</h1>
-<p class="page" id="disclaimer-please-read"></p><h2><strong>!! Disclaimer & Notes: PLEASE READ !!</strong></h2>>
-<ul>
-<li>This guide is a community provided reference material that you can choose to follow at your own risk - and the risk of your hardware.</li>
-<li>I / We are not responsible for any damage that this may or may not cause. Typically in this guide, warning is given on specific tasks that have risk.</li>
-<li>If you find an issue with something in the guide, please let me know! Make an <a href="https://github.com/baldsealion/Steam-Deck-Ultimate-Windows-Guide/issues">Issue Report here</a></li>
-  <br><li>Need additional support?<p><strong>Join the Official Discord</strong></p></li> <iframe src="https://discord.com/widget?id=1088905355980984480&theme=dark" width="350" height="350" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe><p><Strong>Join the PC Gaming Handheld Community</strong></p><a href="https://reddit.com/r/pcgaminghandhelds">https://reddit.com/r/pcgaminghandhelds</a>
-</ul>
-<p class="page" id="show-support"><h2><em>How can I show my thanks?</em></h2></p>
-<p>All I ask is that you help me out by subscribing to my Youtube channel - <a href="https://youtube.com/@baldsealion">https://youtube.com/@baldsealion</a></p>
-<h2><em>I don't want to read. I just want to Get Started</em></h2></p>
-<p>Well you might miss out on important information! - But I am beginning to provide YouTube tutorials that cover all of this guide(Work-In-Progress).</p>
-<p><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html#youtube-tutorial-for-dual-boot-">You can click here to go to the first video</a></p>
-<p class="page" id="what-are-we-doing-here-"><h2><em>What are we doing here ?</em></h2></p>
-<p>This guide is intended for Dual-Booting SteamOS and Windows, or optionally, getting rid of SteamOS and only using Windows on Deck</p>
-<p class="page" id="is-official-dual-boot-available-"></p><h2><em>Has Valve released Dual Boot ?</em></h2>
-<p>No, you can check here to see if this guide is outdated and incorrect and it is in fact available:</p>
-<p><a href="https://help.steampowered.com/en/faqs/view/6121-eccd-d643-baa8">Valves Windows Resources</a></p>
-<p class="page" id="will-this-possibly-brick-my-device-"></p><h2><em>Can this brick my Steam Deck ?</em></h2>
-<p>No, you can always revert back, as long as you have a spare flash drive or micro SD and another computer, you can always reinstall SteamOS from scratch using the Recovery Image provided by Valve:</p>
-<p class= "page" id="windows-10-or-windows-11-"></p><h2><em>Should I pick Windows 10 or Windows 11 ?</em></h2>
-<p>This is completely your choice. Both will work for the Steam Deck. There are pros and cons to both.  </p>
-<p>Here are some reasons to choose Windows 10:</p>
-<ul>
-<li>Comparing stock Windows 10 to stock Windows 11, Windows 10 has less resource consumption</li> 
-<li>There are a few specific games that only work on Windows 10 - specifically - FIFA 23 and Valorant</li>
-</ul>
-<p>Here are some reasons to choose Windows 11:</p>
-<ul>
-<li>Better touch accuracy</li>
-<li>Touch keyboard that moves apps out of the way instead of overlaying them</li>
-<li>Direct Storage works better in Windows 11 according to <a href="https://devblogs.microsoft.com/directx/directstorage-1-1-coming-soon/">DirectX Dev Blog under GPU Compression</a></li>
-</ul>
-<p class="page" id="which-versions-can-dual-boot-""></p><h2><em>Which Steam Deck versions can Dual Boot ?</em></h2>
-<p>Technically all of them. However, 64GB users will find it very difficult to keep both SteamOS and Windows. Windows 10 Home requires a minimum of 20GB free space; Windows 11 Home requires a minimum of 32GB of free space. If you are interested in upgrading your Solid State Drive, I have provided a tutorial in <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Hardware-Upgrades.html#upgrade-ssd">10. Hardware Upgrades</a></p>
-<p class="page" id="can-i-use-a-microsd-for-windows-"></p><h2><em>Should I use a microSD for Windows Operating System?</em></h2>
-<p>This is entirely your call, but it doesn't perform very well. My opinion is that, a micro SD install should be used only for testing purposes, your performance bottleneck will be the micro SD card.</p>
-<p class="page" id="what-about-an-external-solid-state-drive-"></p><h2><em>What about an External Solid State Drive ?</em></h2>
-<p>Yes, it's a PC. It will work OK as long as you mean an actualy Solid State Drive with m2 slot and not a USB Flash Drive.</p>
-<p class="page" id="are-there-any-issues-with-external-solid-state-drives-"></p><h2><em>Are there any issues with External Solid State Drives?</em></h2>
-<p>Yes. </p>
-<ul>
-<li><p>If your External SSD is connected to a hub/dock and connected to the charger, when you disconnect the charger, it is likely that Windows will freeze. Possible work-arounds would be sleeping the device first before disconnecting the charger cable, though this has limited success. Possibly more successful would be to hibernate the device first instead of sleep.</p>
-</li>
-<li><p>You must use Windows To Go instead of the main Windows Home/Pro installation</p>
-</li>
-<li><p>If you are connected through a dock made for the Steam Deck, your bandwidth for throughout may be limited to 5GBps. This is a very YMMV situation, but something to be aware of and will vary based on the dock&#39;s technical specifications.</p>
-</li>
-</ul>
-<p class="page" id="how-is-the-gaming-performance-"></p><h2><em>How is the gaming performance in Windows versus SteamOS ?</em></h2>
-<p>This will vary based on a lot of factors(what other apps you have included in Windows outside of this guide, what build of Windows you are using, etc) but typically in community testing, benchmarks perform similar, if not better. Some games can run faster in SteamOS thanks to pre-cached shaders, but you can also do this in Windows on DirectX 9-11 titles using <a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/QOL-Improvements.html#dxvk">DXVK in Windows</a> </p>
-<p class="page" id="how-is-battery-life-"></p><h2><em>How is Battery Life in Windows versus SteamOS ?</em></h2>
-<p>Again this will vary based on your system, but if you follow this guide, very comparable! I don&#39;t have any fancy benchmarks to show you here, just personal &amp; community testing experience.</p>
-<p class="page" id="is-there-fan-control-for-windows-"></p><h2><em>Is there fan control for Windows ?</em></h2>
-<p>Yes! This is covered in Section 1.6 of this guide. However, it can result in bans for online games that use Anti-Cheat, so use at your own risk. This is provided by <a href="https://github.com/ayufan-research/steam-deck-tools">Ayufan&#39;s Steam Deck Tools</a></p>
-<p class="page" id="anything-windows-cannot-do-"></p><h2><em>Is there anything that SteamOS can do that Windows cannot ?</em></h2>
-<p>Yes. 
-<ul>
-<li>You cannot use the Steam Deck in Windows as a remote streaming host(but you can use it as a streaming client)</li>
-<li>Windows GPU/APU drivers do not include hardware codecs, which means you will have to use Software Decoding for OBS, Steam Remote Play, or Moonlight (you should use<a href="https://github.com/LizardByte/Sunshine/releases"> Sunshine</a> for this as <a href="https://nvidia.custhelp.com/app/answers/detail/a_id/5436">nVidia killed Gamestream)</a></li>
-</ul>
-<p><a href="https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3">Steam Deck Recovery</a></p>
-<br><p>Please proceed to<a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide/Getting-Started.html"> 1. Getting Started</a></p>
+        li {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
 
-        </div> <!-- /div.col-md-9 -->
-      </div> <!-- /div.row -->
-    </div> <!-- /div.container -->
-  </body>
-  <script>
-    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
-  </script>
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px; /* Set an appropriate height for your container */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="header-link">Bald Sea Lion's PC Handheld Guides</h1>
+</header>
+<h2><strong>WARNING & DISCLAIMER: PLEASE READ</strong></h2>
+<p>The guides contained on this website are community provided reference materials that you can choose to follow at your own risk - and the risk of your hardware.</p>
+<p>I / We are not responsible for any damage that this may or may not cause. Typically, warning is given on specific tasks that have risk of hardware damage.</p>
+<h2><strong>Guides</strong></h2>
+<p>Below you will find instructional documentation for PC Handheld devices. These aim to be the most comprehensive guides available.</p>
+<p>The instructions are a combination of testing, community features and developments and many hours of labor.</p>
+<header>
+    <li><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide" class="header-link">ROG ALLY Ultimate Windows Guide (WIP)</a></li>
+</header>
+<header>
+    <li><a href="https://baldsealion.github.io/Steam-Deck-Ultimate-Windows-Guide" class="header-link">Steam Deck Ultimate Windows Guide</a></li>
+</header>
+<h2><strong>How to Show Support</strong></h2>
+<p>If you like what is offered, please consider <a href="https://ko-fi.com/baldsealion">Donating to me using Ko-Fi</a> or <a href="https://www.youtube.com/@baldsealion">Subscribing to my YouTube Channel</a></p>
+<p>If you find an issue with something in these guides, please let me know! Make an <a href="https://github.com/baldsealion/Steam-Deck-Ultimate-Windows-Guide/issues">Issue Report here</a></p>
+<br><h2><strong>How to Get Support</h2></strong>
+    <br><p><strong>Join the Official Discord Below</strong></p><br>
+<div class="iframe-container">
+    <iframe src="https://discord.com/widget?id=1088905355980984480&theme=dark" width="350" height="350"
+        allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        text-align="center"></iframe>
+</div>
+<br><strong><p>Join the PC Gaming Handheld SubReddit Below</p></strong><br><p><a href="https://reddit.com/r/pcgaminghandhelds">https://reddit.com/r/pcgaminghandhelds</a></p>
+</body>
 </html>
