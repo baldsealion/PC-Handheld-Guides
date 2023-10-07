@@ -1,0 +1,31 @@
+        /* CSS to center-align paragraphs */
+        p {
+            text-align: center;
+        }
+
+        li {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px; /* Set an appropriate height for your container */
+        }
+		.responsive {
+		  width: 5%;
+		  height: auto;
+		}
+		.header-warning {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.header-warning img {
+			margin-right: 10px;			/* Add some margin to separate the images from the header text */
+			margin-left: 10px;
+		}
