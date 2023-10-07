@@ -29,3 +29,14 @@
 			margin-right: 10px;			/* Add some margin to separate the images from the header text */
 			margin-left: 10px;
 		}
+		.header-logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.header-logo img {
+			align-items: center;
+			justify-content: center;
+			width: 8%;
+			height: auto;
+		}
