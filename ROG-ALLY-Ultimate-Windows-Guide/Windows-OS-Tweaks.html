@@ -80,11 +80,13 @@
           <li>Continue running background extensions and apps when Microsoft Edge is closed</li>
 
           <p class="page" id="disable-hibernation-and-fast-startup"><h2>Disable Hibernation & Fast Startup</h2>
-          <p>Hibernation is enabled by default and is unreliable. Fast </p>
-          <p>In Windows, click on search and type in <code>powercfg.cpl</code> and press <strong>Enter</strong></p>
-          <p>On the left-hand side, click on <strong>"Choose what the power buttons do"</strong></p>
-          <p>Tap on the top where it says <strong>"Change settings that are currently unavailable"</strong></p>
-          <p>Uncheck both <code>Turn on fast startup (recommended)</code> and <code>Hibernate</code>, leave <strong>Sleep</strong> checked</p>
+          <strong><p>Hibernation is used when Standby fails - it is enabled by default and is unreliable (in my experience) </p>
+          <p>Fast Startup causes performance issues and bugs when performing driver updates, BIOS upgrades, etc when you don't fully shut down</p>
+          </strong>
+          <p>1. In Windows, click on search and type in <code>powercfg.cpl</code> and press <strong>Enter</strong></p>
+          <p>2. On the left-hand side, click on <strong>"Choose what the power buttons do"</strong></p>
+          <p>3. Tap on the top where it says <strong>"Change settings that are currently unavailable"</strong></p>
+          <p>4. Uncheck both <code>Turn on fast startup (recommended)</code> and <code>Hibernate</code>, leave <strong>Sleep</strong> checked</p>
 
           <p class="page" id="direct-x-runtimes"><h2>Install Direct X Runtimes</h2>
           <p>For game compatibility, ensure that Direct X Runtimes are updated:</p>
