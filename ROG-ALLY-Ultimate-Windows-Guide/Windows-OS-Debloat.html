@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1. First Time Setup</title>
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../github.css" rel="stylesheet" />
+<link href="../doc.css" rel="stylesheet" />
+<script src="../jquery.min.js" type="javascript"></script>
+<script src="../bootstrap.min.js" type="javascript"></script>
+  </head>
+  <header>
+    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html" class="header-link">ROG ALLY Ultimate Windows Guide</a>
+  </header>
+  <body id="page-top" class="html-doc">
+    <div>
+      <div>
+       <div>
+          <ul class="nav navbar-nav">
+            <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html">Frequently Asked Questions</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/First-Time-Setup.html#First-Time-Setup">1. First Time Setup</a>
+                </ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat.html">2. (Optional) Windows OS Debloat</a> 
+                  <li class="active">
+                      <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat.html#custom-windows-installation">Custom Windows OS Recommendations</a></ol>
+                      <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat#recommended-debloat-process">Recommended Debloat Process</a></ol>
+                      <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat#disable-windows-updates">Disable Windows Updates</a></ol>
+                  </li>               
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html">5. Gyro Configuration</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Fix-Power-Profiles">6. Fix Power Profiles</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Graphic-Adjustments.html">7. Graphic Adjustments</a>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Additional-Applications.html">8. Additional Applications</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
+                </ol>
+                <ol>
+                  <div style="color: #0f0f0f;">.</div>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="custom-windows-installation"></p><h2>Custom Windows OS Recommendations</h2>
+        <p>I can&#39;t recommend a custom Windows version for a few reasons:</p>
+        <strong>
+        <li>Custom Windows builds that you can download violate Microsoft&#39;s re-distribution terms(it's illegal per their legal software terms)</li>
+        <li>There are builds that modify an existing Windows Image you already have, such as ReviOS and Tiny11, can be built by the end user with a Windows 11 ISO, but won't be covered here</li>
+        <li>Custom builds often leave out important functionality that you may need later, or due to the invasive nature, can cause unexpected stability issues with ripped out services/processes - and unforseen issues with Windows Updates</li>
+        <li>While custom builds can make Windows feel "snappier", there really isn't any performance gains for gaming (within margin typically)</li>
+        <li>Lastly they pose a high security risk, you are fully trusting the author that there is no malicious modifications to the kernel or other processes(these guys are smart enough to mask from Anti-Virus)</li>
+        </strong>
+
+        <p class="page" id="recommended-debloat-process"></p><h2>(Optional) Recommended Debloat Process</h2>
+        <p>I believe that a minimal amount of debloat is needed for the ROG ALLY with the Stock Windows 11 image it provides</p>
+        <p>My bloat recommendations will also remove some security features to make the ROG ALLY easier to use, if you don't like it, don't follow it. I will label them with (Risk) at the beginning</p>
+        <p>There are dozens of debloat tools out there. I prefer to use SophiApp, it is Open Source and is non-invasive. It can be downloaded below:</p>
+        <li><a href="https://github.com/Sophia-Community/SophiApp/releases">https://github.com/Sophia-Community/SophiApp/releases</a></li>
+        <p>1. First make a <strong>System Restore Point</strong>, so you can quickly revert back in-case any of this breaks your system(but it shouldn't)</p>
+        <p>2. Once downloaded, extract it and run the SophiApp.exe file</p>
+        <p>3. If the SmartScreen pop-up comes up, just choose to run it anyway. Inside the app, first go to <strong>Settings</strong> and turn on <strong>Advanced Settings</strong></p>
+        <p>4. I would recommend the following:
+        <li>Under <code>Privacy</code>, disable all Telemetry/MS Feedback options</li>
+        <li>Under <code>System</code>, Disable "Storage Sense" & enable "Display Stop Error Code when BSoD occurs"</li>
+        <li>Under <code>System</code>, Install Visual C++ Modules & .NET Framework (don't uninstall OneDrive, it will fail)</li>
+        <li>Under <code>Personalization</code>, switch to Dark Mode</li>
+        <li>Under <code>UWP Apps</code>, uninstall any unwanted UWP apps(Minimum to keep -- ACSE, MyASUS, Realtek, Movies & TV, Realtek and any Xbox apps)</li>
+        <li>Under <code>UWP Apps</code>, disable "Enable Microsoft Teams autostarting" and "Autostart Cortana"</li>
+        <li>Under <code>Games</code>, keep "Xbox Game Bar"(used for Recording in Armoury Crate) and "Xbox Game Bar Tips" and enable "Hardware-accelerated GPU scheduling"</li>
+        <li><strong>(Risk)</strong> Under <code>Security</code>, disable "Check apps and files within Microsoft Defender SmartScreen" & "Mark files that have been downloaded from the internet as unsafe"</li>
+        <li><strong>(Risk)</strong> Under <code>Security</code>, set "Choose when to be notified about changes to your computer" to Never Notify (this disables UAC prompts)</li>
+        <li>Under <code>Context Menu</code>, enable "Enable the Windows 10 context menu style" & disable "The "Cast to device" item", "The "Share" item" & "The "Print" item"</li>
+        <p>5. After applying and rebooting, open <strong>Remove Apps and Programs</strong> and make sure that all the apps you wanted uninstalled are gone, uninstall OneDrive as well</p>
+
+        
+
+        <p>Proceed to the next step <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

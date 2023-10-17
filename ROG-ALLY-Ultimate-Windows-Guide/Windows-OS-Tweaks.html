@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3. Windows OS Tweaks</title>
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../github.css" rel="stylesheet" />
+<link href="../doc.css" rel="stylesheet" />
+<script src="../jquery.min.js" type="javascript"></script>
+<script src="../bootstrap.min.js" type="javascript"></script>
+  </head>
+  <header>
+    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html" class="header-link">ROG ALLY Ultimate Windows Guide</a>
+  </header>
+  <body id="page-top" class="html-doc">
+    <div>
+      <div>
+       <div>
+          <ul class="nav navbar-nav">
+            <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html">Frequently Asked Questions</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/First-Time-Setup.html#First-Time-Setup">1. First Time Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat.html">2. (Optional) Windows OS Debloat</a> 
+                </ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>
+                  <li class="active">
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-edge-background">Disable Edge Background Process</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-hibernation-and-fast-startup">Disable Hibernation & Fast Startup</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#direct-x-runtimes">DirectX Runtimes</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-driver-updates">Disable Driver Updates</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-upgrades-updates">Disable Updates & Upgrades</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-telemetry">Disable Telemetry(All Updates if Wanted)</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#automatic-login">Automatic Login</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#visual-c-modules">Visual C++ Modules</a></ol>
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#disable-uac">Disable UAC</a></ol>
+                </li>               
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html">5. Gyro Configuration</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Fix-Power-Profiles">6. Fix Power Profiles</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Graphic-Adjustments.html">7. Graphic Adjustments</a>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Additional-Applications.html">8. Additional Applications</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
+                </ol>
+                <ol>
+                  <div style="color: #0f0f0f;">.</div>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+
+          <h1><em>Note that most of these tweaks will require a reboot to take effect, so for best efficiency, reboot after all changes have been made</h1></em>
+          
+          <p class="page" id="disable-edge-background"><h2>Disable Edge from Running the Background & At Startup</h2>
+          <p>By default, Edge will run in the background. You can disable this:
+          <p>Open Edge, click the <strong>3 dots menu &gt; Settings &gt; System and Performance</strong>(uncheck the following):
+          <li>Startup Boost</li>
+          <li>Continue running background extensions and apps when Microsoft Edge is closed</li>
+
+          <p class="page" id="disable-hibernation-and-fast-startup"><h2>Disable Hibernation & Fast Startup</h2>
+          <p>Hibernation is enabled by default and is unreliable. Fast </p>
+          <p>In Windows, click on search and type in <code>powercfg.cpl</code> and press <strong>Enter</strong></p>
+          <p>On the left-hand side, click on <strong>"Choose what the power buttons do"</strong></p>
+          <p>Tap on the top where it says <strong>"Change settings that are currently unavailable"</strong></p>
+          <p>Uncheck both <code>Turn on fast startup (recommended)</code> and <code>Hibernate</code>, leave <strong>Sleep</strong> checked</p>
+
+          <p class="page" id="direct-x-runtimes"><h2>Install Direct X Runtimes</h2>
+          <p>For game compatibility, ensure that Direct X Runtimes are updated:</p>
+          <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=35">Download Direct-X User Runtime</a> (<strong>Make sure to un-select &quot;Install the Bing Bar&quot; during install</strong>)</li>
+            
+          <p class="page" id="disable-driver-updates"><h2>Disable Windows Driver Updates</h2>
+          <p>Windows will automatically include driver updates in normal Windows Updates, this can cause issues. It's highly recommended you at least disable driver updates</p>
+          <p>Open a Command Prompt window as Administrator and type/paste in the following:</p>
+          <li><code>reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" /v "SearchOrderConfig" /t REG_DWORD /d 0 /f</code></li>
+          <p>Reboot for it to take effect</p>
+
+          <p class="page" id="disable-upgrades-updates"><h2>(Optional/Risk) Disabling Windows Upgrades/Feature Updates</h2>
+          <p>Installing this app will prevent Windows from upgrading major releases/feature updates</p>
+          <p>Download the app InControl:</p>
+          
+          <li><a href="https://www.grc.com/incontrol.htm">https://www.grc.com/incontrol.htm</a></li>
+          <p>Run it and click the button to block updates. No further action is necessary</p>
+
+          <p class="page" id="disable-telemetry"><h2>(Optional/Risk) Disabling Windows Telemetry(and all Windows Updates)</h2>
+          <p>If you would like to disable updates entirely, or just block Windows Telemetry(SophiApp should have already handled this part), or both, you can use O&amp;O Shutup to do so. 
+          <p>Note that disabling Windows updates entirely, does increase the security risk.</p>
+          <p>Download, install and run O&amp;O Shutup:</p>
+          
+          <li><a href="https://www.oo-software.com/en/shutup10">https://www.oo-software.com/en/shutup10</a></li>
+          
+          <p>1. Search in the top-right for "Telemetry" and toggle all to be On/Blocked</p>
+          
+          <p>2. Search again in the top-right for "Windows Update" and toggle all to be On/Blocked</p>
+
+          <p class="page" id="automatic-login"><h2>(Optional/Risk) Enable Automatic Login & Unlock on Wake</h2>
+          <p>If you don&#39;t want to be prompted for your Windows password when powering on, or waking from sleep, follow these instructions:</p>
+          
+          <p>1. Download, open and run <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/autologon">Autologon by Sysinternals/Microsoft</a></p>
+          <p>2. Make sure the correct account is set and put in your password, then click <strong>Enable</strong> (application doesn&#39;t need to run again unless your password changes)</p>
+          <p>3. To disable from asking for password when waking from sleep, run Command Prompt as Administrator and enter the following command:</p>
+          
+          <li><code>PowerCfg /SETACVALUEINDEX SCHEME_CURRENT SUB_NONE CONSOLELOCK 0</code></li>
+          <li><code>PowerCfg /SETDCVALUEINDEX SCHEME_CURRENT SUB_NONE CONSOLELOCK 0</code></li>
+          <p>Reboot to apply</p>
+
+          <br><p>Proceed to the next step <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a></p>
+
+          <h1><em>If you didn't use SophiApp in previous section, follow below:</em></h1>
+          
+          <p class="page" id="visual-c-modules"><h2>Install Visual C++ Modules</h2>
+          <h3>If you didn't already do this in <strong>Windows OS Tweaks</strong> using SophiApp, then do this now</h3>
+          <p>For game and application compatibility, please install this all-in-one Visual C++ package</p>
+          
+          <li><a href="https://github.com/abbodi1406/vcredist/releases">Visual C++ All-In-One Releases</a></li>
+          
+
+          <p class="page" id="disable-uac"><h2>(Optional/Risk) Disabling User Account Control</h2>
+          <p>This prevents constant pop-ups when installing software, or when launching any programs that have to &quot;Run as Administrator&quot;</p>
+          
+          <p>1. Open <strong>Control Panel &gt; User Accounts &gt; User Accounts &gt; Change User Account Control Settings</strong></p>
+          <p>2. Change the slider all the way down to the bottom to <strong>Never Notify</strong></p>
+          <p>3. Click <strong>OK</strong> and reboot to take effect</p>
+          
+
+
+
+          
+          <br><p>Proceed to the next step <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

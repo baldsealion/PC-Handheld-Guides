@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>5. Gyro Configuration</title>
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../github.css" rel="stylesheet" />
+<link href="../doc.css" rel="stylesheet" />
+    <script src="../jquery.min.js" type="javascript"></script>
+<script src="../bootstrap.min.js" type="javascript"></script>
+<style>
+  .header-warning {
+  display: flex; /* Use flexbox to align header and image horizontally */
+  align-items: center; /* Center vertically within the div */
+}
+
+.header-warning h3 {
+  margin-right: 10px; /* Add some spacing between the header and image */
+  margin-left: 10px;
+}
+</style>
+  </head>
+  <header>
+    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html" class="header-link">ROG ALLY Ultimate Windows Guide</a>
+  </header>
+  <body id="page-top" class="html-doc">
+    <div>
+      <div>
+       <div>
+          <ul class="nav navbar-nav">
+              <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html">Frequently Asked Questions</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/First-Time-Setup.html#First-Time-Setup">1. First Time Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat.html">2. (Optional) Windows OS Debloat</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a>
+                </ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html">5. Gyro Configuration</a>
+                  <li class="active">
+                      <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html#motion-assistant-setup">Motion Assistant Setup</a></ol>
+                      <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html#hotkey-setup">Gyro Hotkey Setup</a></ol>
+                  </li>  
+                  </ol>
+                  <ol>
+                    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Fix-Power-Profiles">6. Fix Power Profiles</a>
+                  </ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Graphic-Adjustments.html">7. Graphic Adjustments</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Additional-Applications.html">8. Additional Applications</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
+                </ol>
+                <ol>
+                  <div style="color: #0f0f0f;">.</div>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="motion-assistant-setup"></p><h2>Motion Assistant Setup</h2>
+          <p>You might be surprised to know that the ROG ALLY actually has a Gyroscope, however there is no native support at this time (I guess it's low on ASUS bucket list to support their hardware)</p>
+          <p>GPD uses the same type of Gyroscope inside of their devices, because of this, their application will work (so, <strong>thank you GPD!</strong>)</p>
+          <p>If you don't know what a Gyroscope is or why it's useful for gaming, there are plenty of youtube videos that will explain it, but TLDW; it's great for precision aiming in FPS games</p>
+
+          <p>Here are the steps to set up the Gyroscope (you can do this with Handheld Companion as well, but this will not be included in the guide):</p>
+          <p>1. The latest version of <strong>Motion Assistant</strong> (as of writing this, it is 1.1.73) can be obtained from <strong>GPD's Discord</strong>:</p>
+          <li><a href="https://cdn.discordapp.com/attachments/735285596427387023/1152245793273679943/MotionAssistant_Setup_1173.msi">GPD Official Discord - Motion Assistant 1.1.73 (direct link)</a></li>
+          <p>2. Install the application to a folder you would like (ex. <strong>C:\apps\MotionAssistant</strong>)</p>
+          <p>3. Once installed, run the application from your Desktop</p>
+          <div class="header-warning"><img src="https://baldsealion.github.io/PC-Handheld-Guides/Images/warning_sign.png" alt="Warning" width="5%"><h3>Do Not touch any settings besides Gyro options, there is possible Risk here!</h3><img src="https://baldsealion.github.io/PC-Handheld-Guides/Images/warning_sign.png" alt="Warning" width="5%">
+          </div>
+          <p>4. Go to the <strong>Gyro Input</strong> Tab, make sure "Select Gyrometer" is set to <strong>Internal</strong> and the "Physical Controller is set to <strong>0: Xbox 360 Controller for Windows</strong></p>
+          <p>5. Go to the Advance Tab and select the following:</p>
+          <li>Start with windows</li>
+          <li>Minimized</li>
+          <li>Minimized after Startup</li>
+          <li>(Optional) UDP Server - this is for WiiU/Switch Emulation</li>
+          <p>6. Test out the Gyro by checking the box <strong>Gyro Simulate</strong> at the top of the screen</p>
+          <p>7. Under the <strong>Gyro Simulate</strong> Tab, you can customize the sensitivity to your liking and whether or not to simulate a Mouse, 360 or DS4 controller</p>
+          <p>8. Once finished, click the <strong>Save</strong> button at the top and overwrite the default.ini file</p>
+          <p>9. Minimize the application to keep it running, it will stay in the System Tray</p>
+          <h3>NOTE: WiiU / Yuzu Setup won't be shown here, there are some steps to perform on the emulators themselves that you can find other guides for</h3>
+
+
+          <p class="page" id="hotkey-setup"></p><h2>Hotkey Setup</h2>
+          <p>You might want to have Gyro enabled/disabled with a Hotkey - you can do this by setting up a Macro in Armoury Crate:</p>
+          <p>1. Open Armoury Crate and go into <code>Settings > Control Mode > Configure > GamePad Mode > Key Mapping</code></p>
+          <p>2. In my case, I chose to use the <strong>Secondary Function</strong> for the <code>Left Trigger</code></p>
+          <p>3. Once you choose the key you want to edit, go to <strong>Combine Keys</strong> and press the <code>X Button</code> to add a new Macro</p>
+          <p>4. I chose the combination <code>CTRL + ALT + L-SHIFT + ]</code>, once you have created the Macro, press the <code>A Button</code> to add the Macro as the <strong>Secondary Function</strong></p>
+          <p>5. I repeated this as well for <strong>Desktop Mode</strong> to keep my hotkeys the same and for testing</p>
+          <p>6. Open <strong>Motion Assistant</strong> and go to the <strong>Gyro Enable</strong> Tab</p>
+          <p>7. The first option is the <strong>Gyro Hotkeys > Gyro Simulate</strong>, click the <code>Set</code> button and then press your key mapping you set in Step #4</p>
+          <p>8. That should be it, you can uncheck the <strong>Gyro Simulate</strong> box at the top if it's checked still, and you should be able to use your hotkey to turn it on and off now!</p>
+
+          <p>To continue setup, please Proceed to <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Fix-Power-Profiles">6. Fixing Power Profiles</a></p>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>

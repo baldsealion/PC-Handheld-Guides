@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9. Troubleshooting Problems</title>
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../bootstrap.min.css" rel="stylesheet" />
+<link href="../github.css" rel="stylesheet" />
+<link href="../doc.css" rel="stylesheet" />
+<script src="../jquery.min.js" type="javascript"></script>
+<script src="../bootstrap.min.js" type="javascript"></script>
+  </head>
+  <header>
+    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html" class="header-link">ROG ALLY Ultimate Windows Guide</a>
+  </header>
+  <body id="page-top" class="html-doc">
+    <div>
+      <div>
+       <div>
+          <ul class="nav navbar-nav">
+            <ol class="nav">
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/index.html">Frequently Asked Questions</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/First-Time-Setup.html#First-Time-Setup">1. First Time Setup</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Debloat.html">2. (Optional) Windows OS Debloat</a> 
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html">3. Windows OS Tweaks</a>      
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Armoury-Crate-Setup">4. Armoury Crate Setup</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Gyro-Configuration.html">5. Gyro Configuration</a>
+                </ol>           
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Fix-Power-Profiles">6. Fix Power Profiles</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Graphic-Adjustments.html">7. Graphic Adjustments</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Additional-Applications.html">8. Additional Applications</a>
+                </ol>
+                <ol>
+                  <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Troubleshooting-Problems.html">9. Troubleshooting Problems</a>
+                </ol>
+                  <li class="active">
+                    <ol><a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Troubleshooting-Problems.html#WIP">WIP</a></ol>
+                  </li>
+                  </ol>
+                  <ol>
+                    <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Hardware-Upgrades.html">10. Hardware Upgrades</a>
+                  </ol>
+                  <ol>
+                    <div style="color: #0f0f0f;">.</div>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="page" id="custom-boot-menus"><h1>Why is my specialized boot menu no longer working / Why is my screen garbled on boot?</h1>
+          <p>You are likely either using rEFInd or Clover - these are the two common dual boot menus for the Steam Deck</p>
+          <p>I would highly recommend you review the source pages for these scripts/applications. If you followed a YouTube video for setup, you may be using an outdated version that already addresses your issue. 
+          <br>Below you will find the links to bo</p>
+          <ul>
+          <li><a href="https://github.com/jlobue10/SteamDeck_rEFInd">rEFInd Github Repo</a></li>
+          <li><a href="https://github.com/ryanrudolfoba/SteamDeck-Clover-dualboot">Clover Github Repo</a></li>
+          </ul>
+          <p>If you have problems that are not listed in their instructions and a new script version does not fix your issue, then make an Issue report on their respective Github.</p>
+          <p class="page" id="wireless-issues"><h1>Wireless Slow/Spotty(Latency spikes, slow downloads)</h1>
+          <p>The following are suggestions that have helped some community members to resolve their wireless issues with the Steam Deck</p>
+          <h2>Install Better Wireless Drivers &amp; Custom Settings</h2>
+          <p>There are two drivers you can use:</p>
+          <ul>
+          <ol>
+          <li><a href="https://www.catalog.update.microsoft.com/Search.aspx?q=2024.10.138.3">Official RealTek 8822CE - 2024.10.138.3</a></li>
+          <p>This is recommended first because it is an official driver and it does not have battery drain issues that the other driver below has<p>
+          <p>Just choose the appropriate file for your version of Windows, extract it from the zip/cab and then right-click on the .inf file and choose install</p>
+          <li><a href="https://www.techpowerup.com/forums/threads/realtek-8822ce-modded-wireless-drivers-with-enabled-advanced-features.283920/">Modified Killer WiFi Drivers for RealTek 8822CE</a></li>
+          <p>As stated, this will drain your battery in sleep mode, but is proven to have the best performance possible</p>
+          <p>Here is a guide to show how to install this update: Ryan Rudolf's Steam Deck WiFi Fix for Windows</p>
+          <a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          </ol>
+          </ul>
+          <h2>Force 5Ghz Mode on Steam Deck</h2>
+          <p>For Wireless Access Points that don&#39;t have a separate SSID for 2.4Ghz and 5Ghz, you can force the Steam Deck to connect to 5Ghz by changing the Wireless Mode in the Driver Configuration:</p>
+          <ul>
+          <li>Go to <strong>Control panel &gt; Hardware and Sound &gt; Device Manager &gt; Expand Network Adapters &gt; Double-Click the RealTek 8822CE Wireless LAN 802.11ac PCI-E-NIC</strong></li>
+          <li>Click the <strong>Advanced</strong> tab and change <strong>Wireless Mode</strong> from Auto to 802.11a/n/ac(depending on which driver is installed, it may not have this option)</li>
+          </ul>
+          <h2>Create a separate 5GHZ SSID for Steam Deck</h2>
+          <p>Some users have reported creating a new SSID and only joining the Steam Deck to it resolved their issues, even on the same wireless access point. Also, it is recommended that if you have a wireless network that broadcasts both 2.4Ghz and 5Ghz, to create a 5Ghz only SSID and join the SteamDeck to this</p>
+          <h2>Try another Wireless Access Point(or Hotspot)</h2>
+          <p>Unfortunately, SteamDeck appears to be extremely picky about the wireless device it&#39;s connected to. If you can try a spare wireless access point, or a hotspot from your phone, this will help determine if the issue is related to your wireless network specifically.</p>
+          <p class="page" id="audio-troubleshooting"><h1>Audio Troubleshooting</h1>
+          <h2>My Audio in Windows is not working anymore!</h2>
+          <p>Go to <strong>Control Panel > Hardware and Sounds > Power Options</strong> and click on the left <strong>Choose what the power buttons do</strong> then click at the top <strong>Change settings that are currently unavailable</strong> then you can uncheck <strong>Turn on fast startup</strong> and click <strong>Save Changes</strong></p>
+          <h2>My audio on my TV doesn't work</h2>
+          <p>This sounds silly, but it works: Go into <strong>Control Panel > Hardware and Sounds > Sound</strong> and then disable the Steam Deck's audio device, then re-enable it, then make sure the primary is set to your TV audio.
+          <p class="page" id="performance-troubleshooting"><h1>Performance & Graphics Troubleshooting</h1>
+          <h2>I get a "MS-Gamebar" pop-up every time I press the STEAM button or open an app</h2>
+          <p>This can happen for a few different reasons(custom Windows, MS-Gamebar missing from your computer), but ultimately it is because Windows is making a call to open Gamebar and it can't find that app. You have two options:</p>
+          <p>1. <strong>Keep Gamebar:</strong> Download the Gamebar app from the App Store and make sure Game Bar is turned on in your Windows Settings</p>
+          <p>2. <strong>Disable Gamebar completely:</strong> Download and run this as Administrator: <a href="https://baldsealion.com/ms-gamebar%20fix/Run_As_Admin_Disable_Gamebar.bat">Run_As_Admin_Fix_Gamebar.bat</a></p>
+          <p>What it does is re-route any Microsoft calls for Gamebar to do nothing. If you don't trust that it will not harm your computer, just copy the code of the batch file into ChatGPT and have it anaylze the code. It is safe.</p>
+          <p>If you decide you want to re-enable Gamebar, you can run this script: <a href="https://baldsealion.com/ms-gamebar%20fix/Run_As_Admin_Enable_Gamebar.bat">Run_As_Admin_Fix_Gamebar.bat</a></p>
+          <h2>My games are slower since APU Upgrade or I get errors when launching games that used to work before upgrade</h2>
+          <p>It is likely that the APU driver is the cause of your performance issues. There have been performance complaints(although I have not personally seen them). To fix this, you will need to do the following:</p>
+          <ol>
+          <li><p>Download and run the <a href="https://steamdeck-packages.steamos.cloud/misc/windows/drivers/Aerith%20Windows%20Driver_2209130944.zip">old APU Drivers from November 2022 Here</a></p>
+          </li>
+          <li><p>When running the installer, click the <strong>Additional Options</strong> on the right and then choose <strong>Factory Reset</strong> on the left.</p>
+          </li>
+          <li><p>After this has finished installing/rebooted your Steam Deck, you can optionally install the older AMD Adrenalin version <a href="https://www.guru3d.com/files-details/amd-radeon-software-adrenalin-22-10-3-driver-download.html">from Guru3D Here</a> </p>
+          </li>
+          <li><p>Perform the same steps as in Step 2, with the new driver.</p>
+          </li>
+          <li><p>After the Steam Deck reboots, everything should be good. If you have unlocked the Refresh Rates as outlined in Section 1.5, you will need to use Custom Resolution Utility again and re-import the BIN file.</p>
+          </li>
+          </ol>
+          <h2>Gamepass Games Aren&#39;t Launching</h1>
+          <p>Make sure your Date &amp; Time are accurate in Windows
+          You can fix the time permanently with a registry entry, instructions located here <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Windows-OS-Tweaks.html#fix-timezone">Fix Timezone by Changing to UTC</a></p>
+          <h2 id="games-look-blurry">Games Look Blurry</h2>
+          <p>You have three options:</p>
+          <ol>
+          <li><p>⁠Change the properties of the game exe and check “Disable Fullscreen Optimizations”</p>
+          </li>
+          <li><p>⁠Get it to run in Windowed mode or Windowed Borderless and then use <a href="https://github.com/Codeusa/Borderless-Gaming/releases/">Borderless Gaming</a> or <a href="https://baldsealion.github.io/PC-Handheld-Guides/ROG-ALLY-Ultimate-Windows-Guide/Additional-Applications.html#graphics-performance-enhancements">Lossless Scaling</a></p>
+          </li>
+          </ol>
+          <h2>Online Games have stutter/long load times (Fortnite, Destiny 2)</h2>
+          <p>These stutters are often related to poor wireless performance. Please follow instructions to download and set up unlocked wireless drivers. If you still have issues, please follow the instructions in the same guide about changing custom settings:</p>
+          <ul>
+          <li><a href="https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi">https://github.com/ryanrudolfoba/SteamDeckWindowsFixForWiFi</a></li>
+          </ul>
+        </div> <!-- /div.col-md-9 -->
+      </div> <!-- /div.row -->
+    </div> <!-- /div.container -->
+  </body>
+  <script>
+    $('body').scrollspy({ target: '#scroll-spy', offset: 40 })
+  </script>
+</html>
