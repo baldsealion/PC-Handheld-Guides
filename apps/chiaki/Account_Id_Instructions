@@ -1,0 +1,11 @@
+Go to https://account.sonyentertainmentnetwork.com/ and sign in.
+
+Open the Network Monitor by pressing Ctrl+Shift+E
+
+Under PlayStation Network select Profile. (Make sure the Network Monitor is clean before doing this, click on the little trash icon to the left)
+
+Find a request where the Domain value is https://web.np.playstation.com/api/basicProfile/v1/profile/users/me and File value is me.
+
+From the request details, select Response.
+
+The variable accountId will contain your real Account ID.
